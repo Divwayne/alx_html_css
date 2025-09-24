@@ -1,0 +1,36 @@
+/* styles.css: Layout styling using Flexbox */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+article {
+  flex: 2;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #fff;
+}
+
+aside {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  background: #f4f4f4;
+  border-left: 1px solid #ccc;
+}
+
+header, footer {
+  padding: 1rem;
+  background: #333;
+  color: white;
+  text-align: center;
+}

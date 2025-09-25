@@ -1,0 +1,68 @@
+/* === Global Reset & Font === */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* === Header Styling === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6565; /* Figma primary accent */
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+header nav ul li a:hover {
+  color: #ff6565;
+}
+
+/* === Hero Section === */
+section.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px 40px;
+  background: url('images/hero-background.jpg') no-repeat center/cover;
+  color: #fff;
+}
+section.hero h1 {
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+section.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+section.hero .cta-btn {
+  background-color: #ff6565;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+section.hero .cta-btn:hover {
+  background-color: #e14d4d;
+}

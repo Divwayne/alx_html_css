@@ -66,3 +66,30 @@ section.hero .cta-btn {
 section.hero .cta-btn:hover {
   background-color: #e14d4d;
 }
+
+/* === Quote Section === */
+section.quote {
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section.quote blockquote {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  color: #555;
+}
+
+section.quote .author {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+section.quote .author::before {
+  content: "— ";
+  color: #ff6565;
+}

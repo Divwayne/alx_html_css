@@ -223,3 +223,60 @@ section.membership h2 {
 .membership .plan button:hover {
   background-color: #0056b3;
 }
+
+/* === FAQ Section === */
+section.faq {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section.faq h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: #222;
+}
+
+.faq .faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.faq .faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq .question {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq .question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.faq .faq-item.active .question::after {
+  content: '-';
+}
+
+.faq .answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq .faq-item.active .answer {
+  display: block;
+}

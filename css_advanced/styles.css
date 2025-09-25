@@ -93,3 +93,57 @@ section.quote .author::before {
   content: "— ";
   color: #ff6565;
 }
+
+/* === Videos List Section === */
+section.videos {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+section.videos h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #333;
+}
+
+section.videos .video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+section.videos .video-item {
+  background: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+section.videos .video-item:hover {
+  transform: translateY(-5px);
+}
+
+section.videos .video-item img {
+  width: 100%;
+  display: block;
+}
+
+section.videos .video-info {
+  padding: 15px;
+}
+
+section.videos .video-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #222;
+}
+
+section.videos .video-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
